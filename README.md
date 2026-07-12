@@ -1,5 +1,5 @@
 # Customer Analytics & Segmentation for an Online Retail Business
-
+![logo][https://co-well.vn/wp-content/uploads/2019/09/Online-Shopping-500x333.jpg]
 # **1. Executive Summary**  
 
 This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA), Cohort Analysis, and RFM Segmentation** on the Online Retail dataset.
