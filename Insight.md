@@ -1,4 +1,5 @@
-# Business Rule
+# EDA Analysis
+
 # Cohort Analysis
 **1. Golden Cohort Demonstrates Exceptional Long-Term Loyalty**
 
