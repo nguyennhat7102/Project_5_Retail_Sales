@@ -1,6 +1,9 @@
-<img src="image/online-retails.jpg" height="400">
+
 
 # Customer Analytics & Segmentation for an Online Retail Business
+<p align="center">
+    <img src="image/online-retails.jpg" width="700">
+</p>
 # **1. Executive Summary**  
 
 This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA), Cohort Analysis, and RFM Segmentation** on the Online Retail dataset.
