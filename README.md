@@ -1,5 +1,4 @@
 # Customer Analytics & Segmentation for an Online Retail Business
-![logo][https://co-well.vn/wp-content/uploads/2019/09/Online-Shopping-500x333.jpg]
 # **1. Executive Summary**  
 
 This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA), Cohort Analysis, and RFM Segmentation** on the Online Retail dataset.
@@ -27,11 +26,30 @@ The company has accumulated a large volume of transactional data but lacks a cle
 - How can customer segmentation support more effective CRM strategies?
 
 # **3. Dataset Overview**
-Dataset Description
-Data Dictionary
-Data Scope
-Project Assumptions
 
+## **About this file**
+This dataset was collected and made available by Dr. Daqing Chen, Director of Public Analytics Group at the School of Engineering and Mathematical Sciences, City University, London. It was contributed to the UCI Machine Learning Repository in December 2010.
+
+The dataset consists of transactional data from a UK-based online retailer that mainly sells unique all-occasion gifts. The transactions span from December 1, 2010, to December 9, 2011. The data includes sales of over 500,000 transactions, reflecting product purchases made by customers in various countries, with a focus on non-store purchases.
+
+**Key Features:**
+- InvoiceNo: The invoice number associated with the transaction. A numeric identifier for each transaction.
+- StockCode: The code of the purchased product. A unique identifier for each product.
+- Description: A brief description of the product.
+- Quantity: The quantity of each product purchased per transaction.
+- InvoiceDate: The date and time when the transaction was generated.
+- UnitPrice: The unit price of the product.
+- CustomerID: A unique identifier for the customer.
+- Country: The country from which the customer made the purchase.
+
+**Purpose and Usage:**
+This dataset can be utilized for a variety of purposes, including but not limited to:
+- Customer Segmentation: Analyzing purchasing patterns to classify customers based on their buying behavior.
+- Product Recommendation: Developing recommendation systems based on the purchase history.
+- Sales Forecasting: Predicting future sales based on historical data trends.
+- Market Basket Analysis: Identifying associations between products frequently bought together.
+
+**Researchers and practitioners** can leverage this dataset to build and test machine learning models related to sales prediction, customer retention, and inventory management.
 # **4. Analysis Workflow**
 Analysis Pipeline (workflow diagram)
 Tools & Technologies
