@@ -1,3 +1,5 @@
+<img src="image/online-retails.jpg" height="400">
+
 # Customer Analytics & Segmentation for an Online Retail Business
 # **1. Executive Summary**  
 
