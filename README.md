@@ -2,7 +2,7 @@
 
 # Customer Analytics & Segmentation for an Online Retail Business
 <p align="center">
-    <img src="image/work-flow.jpg" width="700">
+    <img src="image/work-flow.png" width="700">
 </p>
 
 # **1. Executive Summary**  
