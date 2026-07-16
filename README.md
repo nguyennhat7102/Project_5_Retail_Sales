@@ -31,7 +31,7 @@ The company has accumulated a large volume of transactional data but lacks a cle
 - Which customer cohorts show the strongest loyalty?
 - How can customer segmentation support more effective CRM strategies?
 
-# **3. Dataset Overview**
+# **3. Data Understanding**
 
 ## **About this file**
 This dataset was collected and made available by Dr. Daqing Chen, Director of Public Analytics Group at the School of Engineering and Mathematical Sciences, City University, London. It was contributed to the UCI Machine Learning Repository in December 2010.
@@ -56,25 +56,65 @@ This dataset can be utilized for a variety of purposes, including but not limite
 - Market Basket Analysis: Identifying associations between products frequently bought together.
 
 **Researchers and practitioners** can leverage this dataset to build and test machine learning models related to sales prediction, customer retention, and inventory management.
-# **4. Analysis Workflow**
-Analysis Pipeline (workflow diagram)
-Tools & Technologies
 
-# **5. EDA**
-## 5.1 Sales Performance
-Revenue Trend
-Order Trend
-## 5.2 Customer Behavior
-Customer Distribution
-Purchase Frequency
-## 5.3 Product Performance
-Best-selling Products
-Revenue Contribution
-## 5.4 Key Findings
+# **4. Data Preparation** 
+| Task             | Description                             |
+| ---------------- | --------------------------------------- |
+| Missing `CustomerID` |  Removed rows with missing `CustomerID` |
+| Missing `Description` | Filled missing Description values with "Unknown". |
+| Duplicates       | Removed duplicate records.              |
+| Invalid `Quantity` | Removed rows where `Quantity <= 0`.     |
+| Invalid `Price`   | Removed rows where `UnitPrice <= 0`.    |
+| Data Types       | Converted datatype from object, string to datetime, int, float, string, category    |
 
-# **6. Cohort Analysis**
+# **5. Feature Engineering** 
+### Objective: 
 
-# **7. RFM Segmentation**
+>Create meaningful features to support customer behavior analysis, cohort analysis, and RFM segmentation.
 
-# **8. Business Recommendations**
+| Feature                     | Formula / Description                   | Purpose                                  |
+| --------------------------- | --------------------------------------- | ---------------------------------------- |
+| **Revenue**                 | `Quantity × UnitPrice`                  | Calculate transaction revenue.           |
+| **InvoiceMonth**            | First day of the invoice month          | Monthly sales trend and cohort analysis. |
+| **CohortMonth**             | Customer's first purchase month         | Identify customer cohorts.               |
+| **CohortIndex**             | Months since first purchase             | Calculate customer retention over time.  |
+| **Recency**                 | Days since the customer's last purchase | Measure purchase recency.                |
+| **Frequency**               | Number of unique invoices               | Measure purchase frequency.              |
+| **Monetary**                | Total revenue per customer              | Measure customer lifetime spending.      |
+| **RFM Score**  | Combined R, F, and M scores             | Customer segmentation.                   |
+| **Segment**    | Champions, Loyal Customers, etc.        | Marketing strategy by customer group.    |
+
+# **6. EDA**
+### Objective:
+
+The exploratory data analysis (EDA) aims to understand sales performance, customer purchasing behavior, and product trends through descriptive statistics and data visualization. This step helps identify meaningful patterns and provides a foundation for subsequent customer analytics.
+
+### Analysis Overview: 
+The following analyses were performed:
+
+#### Sales Distribution
+- Distribution of transaction revenue
+- Distribution of quantity purchased
+- Distribution of unit price
+- Identification of outliers using box plots
+#### Sales Performance
+- Monthly revenue trend
+- Revenue distribution by country
+- Top-selling products by revenue
+#### Customer Purchasing Behavior
+- Distribution of Average Order Value (AOV)
+- Revenue per transaction
+- Purchase frequency analysis
+#### Key Insights
+- Revenue is highly concentrated among a small number of high-value transactions.
+- Most customers place relatively small orders, while a limited number of customers generate exceptionally large purchases.
+- Sales exhibit clear temporal fluctuations, indicating potential seasonal purchasing behavior.
+- A small number of countries contribute the majority of total revenue, suggesting opportunities for market prioritization.
+- Product sales are highly skewed, with a few best-selling products accounting for a significant share of overall revenue.
+
+# **7. Cohort Analysis**
+
+# **8. RFM Segmentation**
+
+# **9. Business Recommendations**
 
