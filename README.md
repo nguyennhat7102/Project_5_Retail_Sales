@@ -99,8 +99,13 @@ The following analyses were performed:
 - Identification of outliers using box plots
 #### Sales Performance
 - Monthly revenue trend
+![alt text](image/revenue-trend.png)
+
 - Revenue distribution by country
+![alt text](image/revenue-by-country.png)
+
 - Top-selling products by revenue
+![alt text](image/top-product.png)
 #### Customer Purchasing Behavior
 - Distribution of Average Order Value (AOV)
 - Revenue per transaction
@@ -113,7 +118,7 @@ The following analyses were performed:
 - Product sales are highly skewed, with a few best-selling products accounting for a significant share of overall revenue.
 
 # **7. Cohort Analysis**
-
+![alt text](image/image.png)
 # **8. RFM Segmentation**
 
 # **9. Business Recommendations**
