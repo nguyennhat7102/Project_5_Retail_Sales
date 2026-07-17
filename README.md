@@ -7,7 +7,7 @@
 
 # **1. Executive Summary**  
 
-This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA), Cohort Analysis, and RFM Segmentation** on the Online Retail dataset.
+This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA), Cohort Analysis, and RFM Segmentation** on the Online Retail dataset. The analysis covers **541,909 transactions** from **4,338 customers**, generating approximately **$8.9 million** in revenue between **December 2010 and December 2011**..
 
 The objective is to identify high-value customers, measure customer retention, understand purchasing patterns, and uncover revenue growth opportunities.
 
@@ -17,7 +17,22 @@ The analysis reveals three key business insights:
 - Purchasing behavior is highly seasonal, with demand concentrated during the holiday period.
 - A relatively small group of loyal customers generates the majority of customer value.
 
-Based on these findings, the project proposes data-driven CRM strategies to improve customer retention, increase Customer Lifetime Value (CLV), and optimize marketing investment.     
+Based on these findings, the project proposes data-driven CRM strategies to improve customer retention, increase Customer Lifetime Value (CLV), and optimize marketing investment.   
+
+###  **Tools & Technologies**
+- **Programming Language:** Python
+- **Environment:** Jupyter Notebook
+- **Data Manipulation & Analysis:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn
+- **Analytical Techniques:** Exploratory Data Analysis (EDA), Cohort Analysis, RFM Customer Segmentation
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+</div>
 
 # **2. Business Problem**
 
@@ -145,6 +160,9 @@ Several cohorts showed noticeable increases in repeat purchases during the final
 Customer purchasing patterns are heavily influenced by seasonal demand, suggesting that retention campaigns should be aligned with peak shopping periods rather than distributed evenly throughout the year.
 
 # **8. RFM Segmentation**
+
+### 🔗 [Business Rules for Customer Segmentation](business-rule.md)
+
 ![alt text](image/RFM.png)
 
 
@@ -181,13 +199,14 @@ The current customer acquisition and onboarding process is insufficient to offse
 
 # **9. Business Recommendations**
 
-
-## **Business Recommendations** 
-| Priority | Recommendation                                                                                                                                      | Expected Outcome                                  |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| High     | Launch a **VIP CRM program** for the December 2010 cohort and replicate the marketing strategy used during the 2010 holiday season.                 | Increase customer retention and long-term loyalty |
-| High     | Implement a **Second-Purchase Campaign** using personalized vouchers, free shipping, or follow-up incentives after the first purchase.              | Improve repeat purchase rate                      |
-| Medium   | Concentrate **Win-back** and **Retargeting** campaigns before the holiday season instead of spreading marketing efforts evenly throughout the year. | Increase seasonal conversion rates                |
-| Medium   | Expand **Cross-selling**, **Upselling**, and **Loyalty Programs** for existing long-term customers.                                                 | Increase Customer Lifetime Value (CLV)            |
+| Analysis             | Recommended Action                                                                                                                                                                                                | Expected Outcome                                                                                          |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Cohort Analysis**  | **Replicate the December 2010 acquisition strategy** by analyzing the marketing channels, promotional campaigns, and product categories that attracted the highest-retention customers during the holiday season. | Acquire higher-quality customers with stronger long-term retention and increase customer loyalty.         |
+| **Cohort Analysis**  | **Implement a Second-Purchase Campaign** within 30 days of the first order using personalized email reminders, discount vouchers, and free shipping incentives.                                                   | Increase Month-2 retention, improve repeat purchase rate, and reduce early customer churn.                |
+| **Cohort Analysis**  | **Schedule seasonal win-back campaigns** 4–6 weeks before major holiday periods using retargeting ads, email marketing, and limited-time offers.                                                                  | Increase seasonal conversion rates and reactivate inactive customers during peak demand.                  |
+| **RFM Segmentation** | **Establish a VIP CRM program** for Champions and Loyal Customers, including exclusive rewards, early product access, and personalized recommendations.                                                           | Increase Customer Lifetime Value (CLV), customer loyalty, and repeat purchase frequency.                  |
+| **RFM Segmentation** | **Develop dedicated CRM journeys** for Big Spenders and Can't Lose Them using personalized offers, account manager outreach, and time-limited win-back incentives.                                                | Recover high-value customers, reduce revenue loss from churn, and maximize high-value customer retention. |
+| **RFM Segmentation** | **Automate reactivation workflows** for At Risk customers after 90 days of inactivity using multi-channel communication (Email → SMS → Voucher).                                                                  | Improve customer reactivation rate while reducing manual CRM effort.                                      |
+| **RFM Segmentation** | **Strengthen customer onboarding** by encouraging second purchases through welcome offers and monitoring **Second Purchase Rate** and **30-Day Retention Rate** as key KPIs.                                      | Improve new customer retention, increase repeat purchases, and support sustainable customer growth.       |
 
 
